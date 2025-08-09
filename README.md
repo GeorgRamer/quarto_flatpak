@@ -1,6 +1,6 @@
 # QUARTO for flatpak SDK
 
-These files create a flatpak SDK extension for [Quarto](https://quarto.org/), This allows you to use Quarto from flatpak IDEs like VS Codium without requiring to poke additional holes into flatpak. 
+These files create a flatpak SDK extension for [Quarto](https://quarto.org/), This allows you to use Quarto from flatpak IDEs like VS Codium without requiring to poke additional holes into flatpak. It also install libxcrypt that it is currently needed by TinyTex provided in Quarto.
 
 ## How to run and install the SDK extension
 
