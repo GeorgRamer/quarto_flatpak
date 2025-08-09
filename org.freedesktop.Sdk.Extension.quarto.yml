@@ -1,0 +1,32 @@
+id: org.freedesktop.Sdk.Extension.quarto
+branch: '24.08'
+runtime: org.freedesktop.Sdk
+build-extension: true
+sdk: org.freedesktop.Sdk
+runtime-version: '24.08'
+appstream-compose: false
+separate-locales: false
+command: quarto
+modules:
+  - name: quarto
+    buildsystem: simple
+    build-commands:
+      - tar -xf quarto.tar.gz -C ${FLATPAK_DEST} --strip-components=1
+    sources:
+      - type: file
+        url: https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.32/quarto-1.7.32-linux-amd64.tar.gz
+        sha256: 262505e3d26459c64e66efefd4b9240eb755ea20dd6fe876d6aa64c7a7b13d27
+        dest-filename: quarto.tar.gz
+  - name: libxcrypt
+    build-options:
+      env:
+        - LIBRARY_PATH: "/app/lib:/usr/lib"
+        - LD_LIBRARY_PATH: "/app/lib:/usr/lib"
+    config-opts: 
+      - --prefix=${FLATPAK_DEST} 
+      - --enable-shared 
+      - --enable-obsolete-api=glibc
+    sources:
+      - type: archive
+        url: "https://github.com/besser82/libxcrypt/releases/download/v4.4.36/libxcrypt-4.4.36.tar.xz"
+        sha256: e5e1f4caee0a01de2aee26e3138807d6d3ca2b8e67287966d1fefd65e1fd8943
