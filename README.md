@@ -20,4 +20,4 @@ These files create a flatpak SDK extension for [Quarto](https://quarto.org/), Th
 
 In order to enable the SDK extension. The easiest way to do this is to install the [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) flatpak and then adding the environmental variable `FLATPAK_ENABLE_SDK_EXT=quarto`
 
-[Flatseal](pictures/flatseal.png)
+![Flatseal](pictures/flatseal.png)
