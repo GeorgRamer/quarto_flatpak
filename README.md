@@ -20,6 +20,6 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 ```  
 ## Enabling extension in other flatpaks
 
-In order to enable the SDK extension. The easiest way to do this is to install the [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) flatpak and then adding the environmental variable `FLATPAK_ENABLE_SDK_EXT=quarto` (purple frame in the image below).
+In order to enable the SDK extension in your IDE, you need to pass the environmental variable `FLATPAK_ENABLE_SDK_EXT=quarto` when running the IDE. You can do this by adding  `--env=FLATPAK_ENABLE_SDK_EXT=quarto` to `flatpak run`. The easier way to do this is to install the [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) flatpak and then adding the environmental variable `FLATPAK_ENABLE_SDK_EXT=quarto` (purple frame in the image below) via the GUI.
 
 ![Flatseal](pictures/flatseal.png)
