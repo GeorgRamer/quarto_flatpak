@@ -1,9 +1,9 @@
 id: org.freedesktop.Sdk.Extension.quarto
-branch: '24.08'
+branch: '25.08'
 runtime: org.freedesktop.Sdk
 build-extension: true
 sdk: org.freedesktop.Sdk
-runtime-version: '24.08'
+runtime-version: '25.08'
 appstream-compose: false
 separate-locales: false
 command: quarto
@@ -28,5 +28,5 @@ modules:
       - --enable-obsolete-api=glibc
     sources:
       - type: archive
-        url: "https://github.com/besser82/libxcrypt/releases/download/v4.4.36/libxcrypt-4.4.36.tar.xz"
-        sha256: e5e1f4caee0a01de2aee26e3138807d6d3ca2b8e67287966d1fefd65e1fd8943
+        url: "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz"
+        sha256: 80304b9c306ea799327f01d9a7549bdb28317789182631f1b54f4511b4206dd6 
